@@ -39,11 +39,10 @@ export default function Trivia() {
       answer:{choices: [choicesOneRef.current.value, choicesTwoRef.current.value, choicesThreeRef.current.value, correctRef.current.value], correct:correctRef.current.value}, 
   })}
 
-  // create a delete btn 
+
   const handleDeleteQuestion = (e) => {
     e.preventDefault()
     deleteTriviaQuestion(triviaQues, index);
-    // axios.delete(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`)
   }
 
   return (

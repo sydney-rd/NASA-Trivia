@@ -1,7 +1,6 @@
 import axios from "axios";
 import api from "./apiConfig.js"
 
-// update does not work 
 const url = "https://api-project-production-7355.up.railway.app/questions"
 
 export const createTrivia = async (data) => {
@@ -14,15 +13,20 @@ export const createTrivia = async (data) => {
   };
   
 
-// // get
-// const getTrivia = async () => {
-//     const response = await axios.get(
-//       "https://api-project-production-7355.up.railway.app/questions"
-//     );
-//     return response.data
-// };
 
-// delete , update
+//get
+// export const getTrivia = async () => {
+//     try {
+//       const response = await axios.get(
+//         "https://api-project-production-7355.up.railway.app/questions"
+//       );
+//       return response.data;
+//     } catch (error) {
+//       throw error;
+//     }
+//   };
+  
+
 
 export const deleteTriviaQuestion = async (triviaQues, index) => {
     try {
