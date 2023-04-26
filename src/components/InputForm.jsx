@@ -1,4 +1,6 @@
+// do I need import? 
 
+// destructoring props by adding them within {} braces as params
 function InputForm( {onSubmit, question, choiceOne, choiceTwo, choiceThree, correctChoice, q} ) {  
   return (
         <form onSubmit={onSubmit}>

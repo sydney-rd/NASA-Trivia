@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import InputForm from "../components/InputForm";
 
-function Trivia() {
+export default function Trivia() {
   const [triviaQues, setTriviaQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [showInputForm, setShowInputForm] = useState(false);
@@ -12,6 +12,8 @@ function Trivia() {
   const choicesThreeRef = useRef();
   const correctRef = useRef();
 
+  // putting the og things within the create input fields
+  // change using service getTrivia function here somewhere  
 
   const getTrivia = async () => {
     const response = await axios.get(
@@ -37,11 +39,11 @@ function Trivia() {
       answer:{choices: [choicesOneRef.current.value, choicesTwoRef.current.value, choicesThreeRef.current.value, correctRef.current.value], correct:correctRef.current.value}, 
   })}
 
-  
-  // const handleDelete= (e) => {
-  //   e.preventDefault()
-  //   axios.delete(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`)
-  // }
+  // create a delete btn 
+  const handleDelete = (e) => {
+    e.preventDefault()
+    axios.delete(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`)
+  }
 
   return (
     <>
@@ -60,15 +62,16 @@ function Trivia() {
             choiceOne={choicesOneRef}
             choiceTwo={choicesTwoRef}
             choiceThree={choicesThreeRef}
-            correctChoice={correctRef}
+            correctChoice={triviaQues[index]?.correctRef} // here!!!
             currentQuestion={triviaQues[index]?.question}
             onSubmit={handleSubmit}
           />
         )}
         <button onClick={handleUpdateQuestion}>UPDATE QUESTION</button>
+        <button onClick={handleDelete}>DELETE QUESTION</button>
       </div>
     </>
   );
 }
 
-export default Trivia;
+
