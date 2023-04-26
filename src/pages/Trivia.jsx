@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import InputForm from "../components/InputForm";
+import { deleteTriviaQuestion } from "../services/trivia";
 
 export default function Trivia() {
   const [triviaQues, setTriviaQuestions] = useState([]);
@@ -41,7 +42,8 @@ export default function Trivia() {
   // create a delete btn 
   const handleDeleteQuestion = (e) => {
     e.preventDefault()
-    axios.delete(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`)
+    deleteTriviaQuestion(triviaQues, index);
+    // axios.delete(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`)
   }
 
   return (
