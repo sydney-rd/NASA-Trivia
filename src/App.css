@@ -4,7 +4,6 @@
   padding-top: 2rem;
 }
 
-.choices {
-  text-align: center;
-  padding-top: 2rem;
+button {
+  display: flex;
 }
