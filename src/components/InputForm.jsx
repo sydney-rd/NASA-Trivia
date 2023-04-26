@@ -1,7 +1,7 @@
 // do I need import? 
 
 // destructoring props by adding them within {} braces as params
-export function InputForm( {onSubmit, question, choiceOne, choiceTwo, choiceThree, correctChoice, q} ) {  
+function InputForm( {onSubmit, question, choiceOne, choiceTwo, choiceThree, correctChoice, q} ) {  
   return (
         <form onSubmit={onSubmit}>
         <input type="text" placeholder="enter question here" defaultValue={q} ref={question}></input>
@@ -14,3 +14,4 @@ export function InputForm( {onSubmit, question, choiceOne, choiceTwo, choiceThre
     )
 }
 
+export default InputForm;

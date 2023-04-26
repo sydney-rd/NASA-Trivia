@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import InputForm from "../components/InputForm.jsx"
 import { createTrivia } from "../services/trivia.js"
 
-function Create() {
+export default function Create() {
     const questionRef = useRef()
     const choicesOneRef = useRef()
     const choicesTwoRef = useRef()
@@ -19,11 +19,12 @@ function Create() {
         question: questionRef.current.value,
         answer:{choices: [choicesOneRef.current.value, choicesTwoRef.current.value, choicesThreeRef.current.value, correctRef.current.value], correct:correctRef.current.value}, 
       }
-      createTrivia(data)
+      createTrivia(data) 
        navigate("/")
     }
     return (
         <div>
+            <p> create a question </p>
             <InputForm 
             onSubmit={handleSubmit}
             question={questionRef}
@@ -35,5 +36,3 @@ function Create() {
         </div>
     )
 }
-
-export default Create

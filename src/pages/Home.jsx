@@ -1,7 +1,6 @@
-function Home() {
+export default function Home() {
     return (
-        <div className="home-page">Trivia</div>
+        <div className="home-page">Hip-Hop Trivia</div>
     )
 }
 
-export default Home;

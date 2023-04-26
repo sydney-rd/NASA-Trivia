@@ -31,7 +31,6 @@ export default function Trivia() {
     getTrivia();
   }, []);
 
-
   const handleSubmit = (e) => {
     e.preventDefault()
     axios.put(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`, {
@@ -40,7 +39,7 @@ export default function Trivia() {
   })}
 
   // create a delete btn 
-  const handleDelete = (e) => {
+  const handleDeleteQuestion = (e) => {
     e.preventDefault()
     axios.delete(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`)
   }
@@ -68,7 +67,7 @@ export default function Trivia() {
           />
         )}
         <button onClick={handleUpdateQuestion}>UPDATE QUESTION</button>
-        <button onClick={handleDelete}>DELETE QUESTION</button>
+        <button onClick={handleDeleteQuestion}>DELETE QUESTION</button>
       </div>
     </>
   );

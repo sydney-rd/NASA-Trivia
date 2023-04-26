@@ -6,11 +6,6 @@ import Create from "./pages/Create.jsx"
 
 
 function App() {
-
- // post req everyting in schema to fill out 
- // put just include things to update  \
- // get is just fetch req. 
- // delete method don't need a body users/1
   return (
     <div className="App">
       <Routes>
