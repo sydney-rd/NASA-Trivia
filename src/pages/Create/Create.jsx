@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useState, useRef } from "react"
 import { useNavigate } from 'react-router-dom';
-import InputForm from "../components/InputForm.jsx"
-import { createTrivia } from "../services/trivia.js"
+import InputForm from "../../components/InputForm.jsx"
+import { createTrivia } from "../../services/trivia.js"
 
 export default function Create() {
     const questionRef = useRef()

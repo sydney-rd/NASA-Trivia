@@ -14,17 +14,17 @@ export const createTrivia = async (data) => {
   
 
 
-//get
-// export const getTrivia = async () => {
-//     try {
-//       const response = await axios.get(
-//         "https://api-project-production-7355.up.railway.app/questions"
-//       );
-//       return response.data;
-//     } catch (error) {
-//       throw error;
-//     }
-//   };
+//get 
+export const getTriviaQues = async () => {
+    try {
+      const response = await axios.get(
+        "https://api-project-production-7355.up.railway.app/questions"
+      );
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  };
   
 
 

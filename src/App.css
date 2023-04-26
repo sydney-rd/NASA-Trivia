@@ -1,9 +1,27 @@
-.questions {
-  text-align: center;
-  color: black;
-  padding-top: 2rem;
-}
-
 button {
   display: flex;
 }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* add some space between the child elements */
+  margin: 0 auto; /* center the container horizontally */
+}
+
+/* .homepage {
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+} */
