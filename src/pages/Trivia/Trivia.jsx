@@ -65,7 +65,7 @@ export default function Trivia() {
   return (
     <>
       <div>
-        <h3>{triviaQues[index]?.question}</h3>
+        <h3 className="trivia-ques">{triviaQues[index]?.question}</h3>
         {triviaQues[index]?.answer?.choices.map((choice, i) => (
           <button key={i} onClick={() => handleAnswerClick(choice)}>
             {choice}
@@ -75,7 +75,7 @@ export default function Trivia() {
       <div>
         <p className="score">Score: {score}</p>
         {showInputForm && (
-          <InputForm className="trivia-form"
+          <InputForm
             question={questionRef}
             choiceOne={choicesOneRef}
             choiceTwo={choicesTwoRef}
