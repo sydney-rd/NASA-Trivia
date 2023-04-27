@@ -9,7 +9,11 @@ button {
 }
 
 a {
-  color: red;
+  color: black;
+  font-family: 'Chalkduster', sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .form {
@@ -20,8 +24,16 @@ a {
   margin: 0 auto; /* center the container horizontally */
 }
 
-/* .homepage {
-  background-color: red;
-  height: 100vh;
-  width: 100vw;
-} */
+.homepage {
+  font-size: 8rem;
+  font-family: 'Chalkduster', sans-serif;
+  text-align: center;
+  padding-top: 5rem;
+  color: darkred;
+  font-weight: bold;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/207142/pexels-photo-207142.jpeg?cs=srgb&dl=pexels-pixabay-207142.jpg&fm=jpg");
+  background-size: cover;
+}

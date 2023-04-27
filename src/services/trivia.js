@@ -16,25 +16,22 @@ export const createTrivia = async (data) => {
 // get
 export const getTriviaQues = async () => {
   try {
-    const response = await axios.get(
-      url
-    );
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-// update is not included in Trivia.jsx need to add it
+// update is not included in Trivia.jsx need to add it still
 export const updateTriviaQuestion = async (id, data) => {
   try {
-    const response = await api.put(url + id, data)
+    const response = await api.put(url + id, data);
     return response.data;
   } catch (error) {
     throw error;
   }
-
-}
+};
 
 // delete
 export const deleteTriviaQuestion = async (id) => {
