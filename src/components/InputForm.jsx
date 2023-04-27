@@ -41,14 +41,14 @@ function InputForm({
         defaultValue={trivia?.answer.choices[3]}
         ref={choiceFour}
       ></input>
-      <p className="correct-ans"> correct answer below </p>
+      <p className="correct-ans"> write the correct answer below </p>
       <input
         type="text"
         placeholder="enter correct answer"
         defaultValue={trivia?.answer.correct}
         ref={correctChoice}
       ></input>
-      <input type="submit" value="submit"></input>
+      <input className="btn" type="submit" value="submit"></input>
     </form>
   );
 }

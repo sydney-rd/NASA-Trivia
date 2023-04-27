@@ -4,13 +4,13 @@ function Navbar() {
   return (
     <nav className="nav">
       <p>
-        <Link to="/">Homepage</Link>
+      <Link to="/create">Create</Link>
       </p>
       <p>
-        <Link to="/create">Create</Link>
+      <Link to="/trivia">Trivia</Link>
       </p>
       <p>
-        <Link to="/trivia">Trivia</Link>
+      <Link to="/">Homepage</Link>
       </p>
     </nav>
   );

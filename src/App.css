@@ -22,6 +22,7 @@ a:hover {
 
 .form {
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
   align-items: center;
   gap: 20px; /* add some space between the child elements */
@@ -46,24 +47,72 @@ body {
 }
 
 .create-title {
+  font-weight: bold;
+  padding-top: 1rem;
   font-size: 2rem;
   text-align: center;
   font-family: 'Chalkduster', sans-serif;
-
-
 }
+
 input {
-  font-size: 2rem;
-  font-family: "comic sans";
+  font-size: 1.3rem;
+  font-family: "gill sans";
   border-radius: 10px;
   background-color: oldlace;
-
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
 }
 
 .correct-ans {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: 'Chalkduster', sans-serif;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: darkred;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+/* trivia */
+.score {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "gill sans";
 
 }
 
+.update-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: darkred;
+  border-radius: 10px;
+}
+
+.update-btn:hover {
+  background-color: transparent;
+}
+
+.delete-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: darkred;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.delete-btn:hover {
+  background-color: transparent;
+}
+
+.trivia-form {
+  color: yellow;
+}

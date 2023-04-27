@@ -73,9 +73,9 @@ export default function Trivia() {
         ))}
       </div>
       <div>
-        <p>Score: {score}</p>
+        <p className="score">Score: {score}</p>
         {showInputForm && (
-          <InputForm
+          <InputForm className="trivia-form"
             question={questionRef}
             choiceOne={choicesOneRef}
             choiceTwo={choicesTwoRef}
@@ -85,8 +85,8 @@ export default function Trivia() {
             onSubmit={handleSubmit}
           />
         )}
-        <button onClick={handleUpdateQuestion}>UPDATE QUESTION</button>
-        <button onClick={handleDeleteQuestion}>DELETE QUESTION</button>
+        <button className="update-btn" onClick={handleUpdateQuestion}>UPDATE QUESTION</button>
+        <button className="delete-btn" onClick={handleDeleteQuestion}>DELETE QUESTION</button>
       </div>
     </>
   );
