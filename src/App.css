@@ -86,7 +86,8 @@ input {
 .score {
   text-align: center;
   font-size: 2rem;
-  font-family: "gill sans";
+  font-family: 'Chalkduster', sans-serif;
+  font-weight: bold;
 
 }
 
@@ -105,7 +106,6 @@ input {
   padding-left: 1rem;
   padding-right: 1rem;
   color: darkred;
-  text-align: center;
   border-radius: 10px;
 }
 
@@ -121,13 +121,14 @@ input {
   font-family: "gill sans";
   font-size: 1.5rem;
   min-width: 50px;
-
 }
 
-.trivia-choice {
+.trivia-choices {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  min-width: 50px;
 }
 
 button {
@@ -137,5 +138,4 @@ button {
   padding-left: 2rem;
   padding-right: 2rem;
   font-family: "gill sans";
-
 }

@@ -4,7 +4,6 @@ import InputForm from "../../components/InputForm";
 import {
   deleteTriviaQuestion,
   getTriviaQues,
-  updateTriviaQuestion,
 } from "../../services/trivia";
 
 export default function Trivia() {
@@ -68,11 +67,13 @@ export default function Trivia() {
     <>
       <div>
         <h3 className="trivia-ques">{triviaQues[index]?.question}</h3>
+        <div className="trivia-choices">
         {triviaQues[index]?.answer?.choices.map((choice, i) => (
           <button key={i} onClick={() => handleAnswerClick(choice)}>
             {choice}
           </button>
         ))}
+        </div>
       </div>
       <div>
         <p className="score">Score: {score}</p>
