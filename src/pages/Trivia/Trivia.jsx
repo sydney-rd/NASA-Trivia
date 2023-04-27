@@ -14,26 +14,35 @@ export default function Trivia() {
   const choicesThreeRef = useRef();
   const correctRef = useRef();
 
-  
   const handleUpdateQuestion = () => {
     setShowInputForm(true);
   };
 
-  
-  useEffect(() =>  {
+  useEffect(() => {
     const fetchTrivia = async () => {
       const response = await getTriviaQues();
-      setTriviaQuestions(response)
-    }
-    fetchTrivia()
+      setTriviaQuestions(response);
+    };
+    fetchTrivia();
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`, {
-      question: questionRef.current.value,
-      answer:{choices: [choicesOneRef.current.value, choicesTwoRef.current.value, choicesThreeRef.current.value, correctRef.current.value], correct:correctRef.current.value}, 
-    });
+    axios.put(
+      `https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`,
+      {
+        question: questionRef.current.value,
+        answer: {
+          choices: [
+            choicesOneRef.current.value,
+            choicesTwoRef.current.value,
+            choicesThreeRef.current.value,
+            correctRef.current.value,
+          ],
+          correct: correctRef.current.value,
+        },
+      }
+    );
   };
 
   const handleAnswerClick = (selectedAnswer) => {
@@ -48,7 +57,7 @@ export default function Trivia() {
     deleteTriviaQuestion(triviaQues, index);
   };
 
-  console.log(triviaQues)
+  console.log(triviaQues);
   return (
     <>
       <div>
@@ -68,8 +77,7 @@ export default function Trivia() {
             choiceTwo={choicesTwoRef}
             choiceThree={choicesThreeRef}
             correctChoice={correctRef}
-            trivia={triviaQues[index]}  
-
+            trivia={triviaQues[index]}
             onSubmit={handleSubmit}
           />
         )}
@@ -79,5 +87,3 @@ export default function Trivia() {
     </>
   );
 }
-
-

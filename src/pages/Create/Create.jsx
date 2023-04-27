@@ -9,9 +9,10 @@ export default function Create() {
     const choicesOneRef = useRef()
     const choicesTwoRef = useRef()
     const choicesThreeRef = useRef()
+    const choicesFourRef = useRef()
     const correctRef = useRef()
+    const triviaRef = useRef()
     const navigate = useNavigate()
-    // const [message, setMessage] = useState("")
 
     const handleSubmit = (e) => {
       e.preventDefault()
@@ -31,6 +32,7 @@ export default function Create() {
             choiceOne={choicesOneRef}
             choiceTwo={choicesTwoRef}
             choiceThree={choicesThreeRef}
+            choiceFour={choicesFourRef}
             correctChoice={correctRef}
             />
         </div>
