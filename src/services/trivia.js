@@ -17,7 +17,7 @@ export const createTrivia = async (data) => {
 export const getTriviaQues = async () => {
   try {
     const response = await axios.get(
-      "https://api-project-production-7355.up.railway.app/questions"
+      url
     );
     return response.data;
   } catch (error) {
@@ -25,13 +25,22 @@ export const getTriviaQues = async () => {
   }
 };
 
-// update
+// update is not included in Trivia.jsx need to add it
+export const updateTriviaQuestion = async (id, data) => {
+  try {
+    const response = await api.put(url + id, data)
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+
+}
 
 // delete
-export const deleteTriviaQuestion = async (triviaQues, index) => {
+export const deleteTriviaQuestion = async (id) => {
   try {
     axios.delete(
-      `https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`
+      `https://api-project-production-7355.up.railway.app/questions/${id}`
     );
   } catch (error) {
     throw error;

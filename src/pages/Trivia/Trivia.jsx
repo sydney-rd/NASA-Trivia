@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import InputForm from "../../components/InputForm";
-import { deleteTriviaQuestion, getTriviaQues } from "../../services/trivia";
+import { deleteTriviaQuestion, getTriviaQues, updateTriviaQuestion } from "../../services/trivia";
 
 export default function Trivia() {
   const [triviaQues, setTriviaQuestions] = useState([]);
