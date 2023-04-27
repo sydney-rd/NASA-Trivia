@@ -36,7 +36,7 @@ export const updateTriviaQuestion = async (id, data) => {
 // delete
 export const deleteTriviaQuestion = async (id) => {
   try {
-    axios.delete(
+    await axios.delete(
       `https://api-project-production-7355.up.railway.app/questions/${id}`
     );
   } catch (error) {

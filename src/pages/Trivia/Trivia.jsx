@@ -58,8 +58,10 @@ export default function Trivia() {
 
   const handleDeleteQuestion = (e) => {
     e.preventDefault();
-    deleteTriviaQuestion(triviaQues, index);
+    const id = triviaQues[index]?._id;
+    deleteTriviaQuestion(id);
   };
+  
 
   console.log(triviaQues);
   return (
