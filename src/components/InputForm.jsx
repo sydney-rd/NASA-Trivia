@@ -11,7 +11,7 @@ function InputForm({
 }) {
   return (
     <form className="form" onSubmit={onSubmit}>
-      <input
+      <input 
         type="text"
         placeholder="enter question here"
         defaultValue={trivia?.question}
@@ -41,7 +41,7 @@ function InputForm({
         defaultValue={trivia?.answer.choices[3]}
         ref={choiceFour}
       ></input>
-      <p> correct answer below </p>
+      <p className="correct-ans"> correct answer below </p>
       <input
         type="text"
         placeholder="enter correct answer"

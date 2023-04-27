@@ -16,6 +16,10 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: darkred;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -32,8 +36,34 @@ a {
   color: darkred;
   font-weight: bold;
 }
+img {
+  padding-top: 5rem;
+}
 
 body {
   background-image: url("https://images.pexels.com/photos/207142/pexels-photo-207142.jpeg?cs=srgb&dl=pexels-pixabay-207142.jpg&fm=jpg");
   background-size: cover;
 }
+
+.create-title {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Chalkduster', sans-serif;
+
+
+}
+input {
+  font-size: 2rem;
+  font-family: "comic sans";
+  border-radius: 10px;
+  background-color: oldlace;
+
+}
+
+.correct-ans {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Chalkduster', sans-serif;
+
+}
+

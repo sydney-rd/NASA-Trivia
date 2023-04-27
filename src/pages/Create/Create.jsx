@@ -23,7 +23,7 @@ export default function Create() {
     }
     return (
         <div>
-            <p> create a question </p>
+            <p className="create-title"> create a question </p>
             <InputForm 
             onSubmit={handleSubmit}
             question={questionRef}
