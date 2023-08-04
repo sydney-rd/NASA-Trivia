@@ -1,0 +1,100 @@
+* {
+    cursor: url("data:image/png;base64,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"),
+        auto !important;
+}
+
+@font-face {
+    font-family: 'Nasa';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nasa'), url('https://fonts.cdnfonts.com/s/56439/Nasa.woff') format('woff');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image-container {
+    background: url("https://wallpaperaccess.com/full/1130622.gif") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rocket-container {
+    position: fixed;
+    bottom: 0;
+    width: 10%;
+    height: 400px;
+    animation: fly 5s linear infinite;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.main-title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: "Nasa", sans-serif;
+    padding-top: 1rem;
+}
+
+.main-summary {
+    color: white;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.start-btn {
+    color: white;
+    font-size: 4rem;
+    padding-top: 10rem;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    transform: translateX(50%);
+    width: 180px;
+    height: auto;
+}
+
+.saturn-container {
+    z-index: 250;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.saturn {
+    width: 10rem;
+}
+
+@keyframes fly {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 100vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-summary {
+        color: white;
+        text-align: center;
+        max-width: 20rem;
+    }
+}
