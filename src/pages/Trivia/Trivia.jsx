@@ -1,10 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import InputForm from "../../components/InputForm";
-import {
-  deleteTriviaQuestion,
-  getTriviaQues,
-} from "../../services/trivia";
+import { deleteTriviaQuestion, getTriviaQues } from "../../services/trivia";
 
 export default function Trivia() {
   const [triviaQues, setTriviaQuestions] = useState([]);
@@ -60,7 +57,6 @@ export default function Trivia() {
     const id = triviaQues[index]?._id;
     deleteTriviaQuestion(id);
   };
-  
 
   console.log(triviaQues);
   return (
@@ -68,11 +64,11 @@ export default function Trivia() {
       <div>
         <h3 className="trivia-ques">{triviaQues[index]?.question}</h3>
         <div className="trivia-choices">
-        {triviaQues[index]?.answer?.choices.map((choice, i) => (
-          <button key={i} onClick={() => handleAnswerClick(choice)}>
-            {choice}
-          </button>
-        ))}
+          {triviaQues[index]?.answer?.choices.map((choice, i) => (
+            <button key={i} onClick={() => handleAnswerClick(choice)}>
+              {choice}
+            </button>
+          ))}
         </div>
       </div>
       <div>
@@ -88,9 +84,15 @@ export default function Trivia() {
             onSubmit={handleSubmit}
           />
         )}
-        <button className="update-btn" onClick={handleUpdateQuestion}>UPDATE QUESTION</button>
-        <button className="delete-btn" onClick={handleDeleteQuestion}>DELETE QUESTION</button>
+        <button className="update-btn" onClick={handleUpdateQuestion}>
+          UPDATE QUESTION
+        </button>
+        <button className="delete-btn" onClick={handleDeleteQuestion}>
+          DELETE QUESTION
+        </button>
       </div>
     </>
   );
 }
+
+// future link for APOD: https://raw.githubusercontent.com/sydney-rd/NASA-api-project/main/APOD.json

@@ -31,4 +31,3 @@ export default function Home() {
     </div>
   );
 }
-// https://raw.githubusercontent.com/sydney-rd/NASA-api-project/main/APOD.json

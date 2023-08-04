@@ -4,6 +4,8 @@
 
 (WORK IN PROGRESS)
 
+Intially - this project was a front-end utilizing another classmates backend API - hip hop trivia. Fetching trivia questions and answers from his API. As I no longer have access to his link, I am re-creating this project to the below:
+
 I created an Astronomy Trivia game utilizing my NASA API which fetches data from NASA's Astronomy Picture of the Day.
 
 My NASA API Project
