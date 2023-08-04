@@ -26,9 +26,3 @@ APOD
 - [Github](https://github.com/nasa/apod-api)
 
 * [NASA](https://api.nasa.gov/)
-
-<p align="center">
-
-<img src="./assets/NASA.png" width="200">
-
-</p>
