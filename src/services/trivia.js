@@ -34,11 +34,12 @@ export const updateTriviaQuestion = async (id, data) => {
   }
 };
 
-// delete
+// delete not working
 export const deleteTriviaQuestion = async (id) => {
   try {
     await axios.delete(
-      `https://api-project-production-7355.up.railway.app/questions/${id}`
+      `  "https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/trivia.json";
+      `
     );
   } catch (error) {
     throw error;
