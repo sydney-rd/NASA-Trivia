@@ -39,23 +39,24 @@ export default function Trivia() {
       });
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.put(
-      `https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/trivia.json`,
-      {
-        question: questionRef.current.value,
-        answer: {
-          choices: [
-            choicesOneRef.current.value,
-            choicesTwoRef.current.value,
-            choicesThreeRef.current.value,
-            correctRef.current.value,
-          ],
-          correct: correctRef.current.value,
-        },
-      }
-    );
+    const newQuestion = {
+      question: questionRef.current.value,
+      answer: {
+        choices: [
+          choicesOneRef.current.value,
+          choicesTwoRef.current.value,
+          choicesThreeRef.current.value,
+          correctRef.current.value,
+        ],
+        correct: correctRef.current.value,
+      },
+    };
+
+    // Save the new question using your API request logic here
+
+    setShowInputForm(false); // Hide the input form after submission
   };
 
   const handleAnswerClick = (selectedAnswer) => {
@@ -85,7 +86,6 @@ export default function Trivia() {
       </div>
       <div>
         <p className="score">Score: {score}</p>
-        {/* Display the current APOD entry */}
         {apodData[index] && (
           <div>
             <h3>{apodData[index].title}</h3>
@@ -93,12 +93,25 @@ export default function Trivia() {
             <p>{apodData[index].explanation}</p>
           </div>
         )}
-        <button className="update-btn" onClick={handleUpdateQuestion}>
-          UPDATE QUESTION
-        </button>
-        <button className="delete-btn" onClick={handleDeleteQuestion}>
-          DELETE QUESTION
-        </button>
+        {showInputForm ? (
+          <InputForm
+            question={questionRef}
+            choiceOne={choicesOneRef}
+            choiceTwo={choicesTwoRef}
+            choiceThree={choicesThreeRef}
+            correctChoice={correctRef}
+            onSubmit={handleSubmit}
+          />
+        ) : (
+          <>
+            <button className="update-btn" onClick={handleUpdateQuestion}>
+              ADD NEW QUESTION
+            </button>
+            <button className="delete-btn" onClick={handleDeleteQuestion}>
+              DELETE QUESTION
+            </button>
+          </>
+        )}
       </div>
     </>
   );
