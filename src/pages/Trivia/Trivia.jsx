@@ -29,7 +29,7 @@ export default function Trivia() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.put(
-      `https://api-project-production-7355.up.railway.app/questions/${triviaQues[index]?._id}`,
+      `https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/trivia.json`,
       {
         question: questionRef.current.value,
         answer: {

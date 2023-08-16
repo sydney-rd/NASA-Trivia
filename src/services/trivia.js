@@ -1,7 +1,8 @@
 import axios from "axios";
 import api from "./apiConfig.js";
 
-const url = "https://api-project-production-7355.up.railway.app/questions";
+const url =
+  "https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/trivia.json";
 
 // create
 export const createTrivia = async (data) => {
