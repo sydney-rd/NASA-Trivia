@@ -9,7 +9,7 @@ export default function Trivia() {
   const [index, setIndex] = useState(0);
   const [showInputForm, setShowInputForm] = useState(false);
   const [score, setScore] = useState(0);
-  const [apodData, setApodData] = useState({});
+  const [apodData, setApodData] = useState([]);
   const questionRef = useRef();
   const choicesOneRef = useRef();
   const choicesTwoRef = useRef();
@@ -62,7 +62,7 @@ export default function Trivia() {
     if (selectedAnswer === triviaQues[index]?.answer?.correct) {
       setScore(score + 1);
     }
-    setIndex(index + 1);
+    setIndex(index + 1); // Move to the next trivia question
   };
 
   const handleDeleteQuestion = (e) => {
@@ -71,7 +71,6 @@ export default function Trivia() {
     deleteTriviaQuestion(id);
   };
 
-  console.log(triviaQues);
   return (
     <>
       <div>
@@ -86,24 +85,14 @@ export default function Trivia() {
       </div>
       <div>
         <p className="score">Score: {score}</p>
-        {showInputForm && (
-          <InputForm
-            question={questionRef}
-            choiceOne={choicesOneRef}
-            choiceTwo={choicesTwoRef}
-            choiceThree={choicesThreeRef}
-            correctChoice={correctRef}
-            trivia={triviaQues[index]}
-            onSubmit={handleSubmit}
-          />
+        {/* Display the current APOD entry */}
+        {apodData[index] && (
+          <div>
+            <h3>{apodData[index].title}</h3>
+            <img src={apodData[index].url} alt={apodData[index].title} />
+            <p>{apodData[index].explanation}</p>
+          </div>
         )}
-        <div>
-          {apodData[index]?.data?.map((choice, i) => (
-            <button key={i} onClick={() => handleAnswerClick(choice)}>
-              {choice}
-            </button>
-          ))}{" "}
-        </div>
         <button className="update-btn" onClick={handleUpdateQuestion}>
           UPDATE QUESTION
         </button>
