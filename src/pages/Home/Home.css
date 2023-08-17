@@ -5,11 +5,6 @@
     src: local('Nasa'), url('https://fonts.cdnfonts.com/s/56439/Nasa.woff') format('woff');
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .background-image-container {
     background: url("https://wallpaperaccess.com/full/1130622.gif") no-repeat center fixed;
     background-size: cover;

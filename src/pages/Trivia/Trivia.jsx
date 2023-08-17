@@ -56,7 +56,7 @@ export default function Trivia() {
 
     // Save the new question using your API request logic here
 
-    setShowInputForm(false); // Hide the input form after submission
+    setShowInputForm(false);
   };
 
   const handleAnswerClick = (selectedAnswer) => {
@@ -74,44 +74,54 @@ export default function Trivia() {
 
   return (
     <>
-      <div>
-        <h3 className="trivia-question">{triviaQues[index]?.question}</h3>
-        <div className="trivia-choices">
-          {triviaQues[index]?.answer?.choices.map((choice, i) => (
-            <button key={i} onClick={() => handleAnswerClick(choice)}>
-              {choice}
-            </button>
-          ))}
-        </div>
-      </div>
-      <div>
-        <p className="score">Score: {score}</p>
+      <div className="page-container">
         {apodData[index] && (
-          <div>
-            <h3>{apodData[index].title}</h3>
-            <img src={apodData[index].url} alt={apodData[index].title} />
-            <p>{apodData[index].explanation}</p>
+          <div className="APOD-container">
+            <h3 className="APOD-title">{apodData[index].title}</h3>
+            <img
+              className="APOD-img"
+              src={apodData[index].url}
+              alt={apodData[index].title}
+            />
+            <p className="APOD-date">{apodData[index].date}</p>
+            <p className="APOD-explanation">{apodData[index].explanation}</p>
           </div>
         )}
-        {showInputForm ? (
-          <InputForm
-            question={questionRef}
-            choiceOne={choicesOneRef}
-            choiceTwo={choicesTwoRef}
-            choiceThree={choicesThreeRef}
-            correctChoice={correctRef}
-            onSubmit={handleSubmit}
-          />
-        ) : (
-          <>
-            <button className="update-btn" onClick={handleUpdateQuestion}>
-              ADD NEW QUESTION
-            </button>
-            <button className="delete-btn" onClick={handleDeleteQuestion}>
-              DELETE QUESTION
-            </button>
-          </>
-        )}
+        <div className="trivia-container">
+          <h3 className="trivia-question">
+            Question {index + 1}: {triviaQues[index]?.question}
+          </h3>
+          <div className="trivia-choices">
+            {triviaQues[index]?.answer?.choices.map((choice, i) => (
+              <button key={i} onClick={() => handleAnswerClick(choice)}>
+                {choice}
+              </button>
+            ))}
+          </div>
+          <p className="score">Score: {score}</p>
+
+          {showInputForm ? (
+            <InputForm
+              question={questionRef}
+              choiceOne={choicesOneRef}
+              choiceTwo={choicesTwoRef}
+              choiceThree={choicesThreeRef}
+              correctChoice={correctRef}
+              onSubmit={handleSubmit}
+            />
+          ) : (
+            <>
+              <div>
+                <button className="update-btn" onClick={handleUpdateQuestion}>
+                  ADD NEW QUESTION
+                </button>
+                <button className="delete-btn" onClick={handleDeleteQuestion}>
+                  DELETE QUESTION
+                </button>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </>
   );

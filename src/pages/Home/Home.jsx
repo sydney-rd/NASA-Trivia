@@ -20,9 +20,9 @@ export default function Home() {
       <div className="content-container">
         <h1 className="main-title">Astronomy Trivia</h1>
         <div className="main-summary">
-          Welcome to Astronomy Trivia. Utilizing the wonderous pictures from
-          NASA's Astronomy Picture of the Day, test your knowledge while
-          learning a thing or two!
+          Welcome to Astronomy Trivia. Utilizing wonderous pictures and
+          information from NASA's Astronomy Picture of the Day, test your
+          knowledge with trivia while learning a thing or two from NASA!
         </div>
         <div className="start-btn" onClick={handleStartClick}>
           Start

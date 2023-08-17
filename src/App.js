@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Trivia from "./pages/Trivia/Trivia.jsx";
 import Home from "./pages/Home/Home.jsx";
