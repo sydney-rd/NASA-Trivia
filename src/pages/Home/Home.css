@@ -1,8 +1,11 @@
 @font-face {
     font-family: 'Nasa';
-    font-style: normal;
-    font-weight: 400;
     src: local('Nasa'), url('https://fonts.cdnfonts.com/s/56439/Nasa.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Trench';
+    src: url('../../assets/font/TrenchThin-16R0.otf') format('opentype');
 }
 
 .background-image-container {
@@ -26,58 +29,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    justify-content: space-between;
+    height: 50%;
+    font-family: "Trench";
+    font-size: 1.5rem;
 }
 
+
 .main-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     color: white;
     font-family: "Nasa", sans-serif;
-    padding-top: 1rem;
+    margin-top: -1rem;
 }
 
 .main-summary {
     color: white;
     text-align: center;
     max-width: 30rem;
+    font-size: 2rem;
 }
 
 .start-btn {
     color: white;
     font-size: 4rem;
-    padding-top: 10rem;
-}
-
-.rocket {
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-    transform: translateX(50%);
-    width: 180px;
-    height: auto;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 2rem;
 }
 
 .saturn-container {
-    z-index: 250;
+    z-index: 1;
     position: absolute;
+    padding-top: 3rem;
+    padding-left: 1rem;
     top: 0;
     left: 0;
 }
 
 .saturn {
-    width: 10rem;
+    width: 12rem;
 }
 
-@keyframes fly {
-    0% {
-        bottom: 0;
-    }
-
-    100% {
-        bottom: 100vh;
-    }
+.neptune-container {
+    z-index: 1;
+    position: absolute;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    top: 0;
+    right: 0;
 }
 
 @media only screen and (max-width: 768px) {
