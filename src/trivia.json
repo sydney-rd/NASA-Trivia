@@ -106,5 +106,17 @@
           ],
           "correct": "Jupiter"
         }
+      },
+      {
+        "question": "How long does it take the moon to orbit the Earth?",
+        "answer": {
+          "choices": [
+            "30",
+            "29",
+            "31",
+            "28"
+          ],
+          "correct": "28"
+        }
       }
 ]
