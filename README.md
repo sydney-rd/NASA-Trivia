@@ -1,23 +1,12 @@
-# Astronomy Trivia
+# Astronomy Trivia 🔭
 
 ## Description
 
-(WORK IN PROGRESS)
+Astronomy Trivia is a trivia game that utilizes my [NASA API project](https://sydney-rd.github.io/NASA-api-project/) which fetches data from NASA's Astronomy Picture of the Day API (APOD). 🌌
 
-Intially - this project was a front-end utilizing another classmates backend API - hip hop trivia. Fetching trivia questions and answers from his API. As I no longer have access to his link, I am re-creating this project below. Please see it's deployed link for an idea of how it will look:
+This project showcases 10 Astronomy-based trivia questions that I have sourced, along with an "Astronomy Picture of the Day" information card for each question.
 
-I created an Astronomy Trivia game utilizing my NASA API which fetches data from NASA's Astronomy Picture of the Day.
-
-My NASA API Project
-
-- [Github](https://github.com/sydney-rd/NASA-api-project)
-- [Deployed](https://sydney-rd.github.io/NASA-api-project/)
-
-## CRUD Functionality
-
-- CREATE: Creates a new trivia question
-- DELETE: Will delete a trivia question
-- UPDATE: Will update a trivia question if there is incorrect information!
+Test your knowledge while admiring information and images sourced from NASA!
 
 ## Credit
 
