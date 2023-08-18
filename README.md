@@ -10,7 +10,7 @@ Test your knowledge while admiring information and images sourced from NASA!
 
 ## Play
 
-This project is deployed on [Netlify](https://mern-front-end.netlify.app)
+This project is deployed on [Netlify](https://app.netlify.com/sites/sydneyrd-portfolio/deploys)
 
 ## Credit
 
