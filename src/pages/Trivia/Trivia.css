@@ -29,7 +29,6 @@ body {
     font-size: 1.5rem;
     font-family: Trench;
     padding-top: 1rem;
-
 }
 
 .trivia-container {
@@ -43,6 +42,7 @@ body {
     color: white;
     font-family: Trench;
     font-size: 1.8rem;
+    padding-top: 1rem;
 }
 
 .trivia-choices button {
@@ -67,12 +67,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
-
     .incorrect-answer {
         font-size: 1rem;
     }
-
 
     .score {
         font-size: 1.5rem;
@@ -90,15 +87,10 @@ body {
     }
 
     .trivia-choices button {
-        margin-right: 1rem;
-        color: white;
-        font-weight: bold;
+        margin-right: .3rem;
         height: 2rem;
-        width: 5rem;
-        font-family: Trench;
+        width: 5.5rem;
         font-size: .8rem;
-        border-radius: 10px;
-        background-image: url("../../assets/btn-bg.jpeg");
-        cursor: pointer;
+
     }
 }
