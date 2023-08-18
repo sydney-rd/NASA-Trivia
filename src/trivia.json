@@ -84,39 +84,39 @@
         }
     },
     {
-        "question": "What is the process by which a star releases energy and shines?",
-        "answer": {
-            "choices": [
-                "Fusion",
-                "Conduction",
-                "Evaporation",
-                "Sublimation"
-            ],
-            "correct": "Fusion"
-        }
-    },
-    {
-        "question": "What is the process by which a star releases energy and shines?",
+        "question": "What is the name of the galaxy that contains our solar system?",
         "answer": {
           "choices": [
-            "Fusion",
-            "Conduction",
-            "Evaporation",
-            "Sublimation"
+            "Andromeda",
+            "Milky Way",
+            "Orion",
+            "Triangulum"
           ],
-          "correct": "Fusion"
+          "correct": "Milky Way"
         }
       },
       {
-        "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+        "question": "Which phenomenon causes the appearance of a bright ring around the moon in the night sky?",
         "answer": {
           "choices": [
-            "Mars",
-            "Mercury",
-            "Venus",
-            "Jupiter"
+            "Eclipse",
+            "Aurora",
+            "Halley's Comet",
+            "Halo"
           ],
-          "correct": "Venus"
+          "correct": "Halo"
+        }
+      },
+      {
+        "question": "What is the name of the phenomenon in which a star explodes, becoming extremely bright for a period of time?",
+        "answer": {
+          "choices": [
+            "Nebula",
+            "Quasar",
+            "Supernova",
+            "Black Hole"
+          ],
+          "correct": "Supernova"
         }
       }
 ]
