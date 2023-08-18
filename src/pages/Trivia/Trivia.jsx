@@ -42,7 +42,7 @@ export default function Trivia() {
 
   return (
     <div className="page-container">
-      <ApodInfo />
+      <ApodInfo apodIndex={index} />
       <div className="trivia-container">
         <h3 className="trivia-question">
           Question {index + 1}: {triviaQues[index]?.question}

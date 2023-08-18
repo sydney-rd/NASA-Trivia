@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ApodInfo.css";
 
-export default function ApodInfo() {
+export default function ApodInfo({ apodIndex }) {
   const [apodData, setApodData] = useState([]);
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
   useEffect(() => {
     axios
@@ -22,16 +22,16 @@ export default function ApodInfo() {
 
   return (
     <div>
-      {apodData[index] && (
+      {apodData[apodIndex] && (
         <div className="APOD-container">
-          <h3 className="APOD-title">{apodData[index].title}</h3>
+          <h3 className="APOD-title">{apodData[apodIndex].title}</h3>
           <img
             className="APOD-img"
-            src={apodData[index].url}
-            alt={apodData[index].title}
+            src={apodData[apodIndex].url}
+            alt={apodData[apodIndex].title}
           />
-          <p className="APOD-date">{apodData[index].date}</p>
-          <p className="APOD-explanation">{apodData[index].explanation}</p>
+          <p className="APOD-date">{apodData[apodIndex].date}</p>
+          <p className="APOD-explanation">{apodData[apodIndex].explanation}</p>
         </div>
       )}
     </div>
