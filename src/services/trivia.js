@@ -1,5 +1,4 @@
 import axios from "axios";
-import api from "./apiConfig.js";
 
 const url =
   "https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/trivia.json";

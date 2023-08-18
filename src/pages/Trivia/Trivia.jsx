@@ -34,7 +34,7 @@ export default function Trivia() {
     if (clickedChoice !== triviaQues[index - 1]?.answer?.correct) {
       const timer = setTimeout(() => {
         setClickedChoice(null); // Reset the clicked choice
-      }, 1000);
+      }, 1500);
 
       return () => clearTimeout(timer);
     }

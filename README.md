@@ -8,6 +8,10 @@ This project showcases 10 Astronomy-based trivia questions that I have sourced, 
 
 Test your knowledge while admiring information and images sourced from NASA!
 
+## Play
+
+This project is deployed on [Netlify](https://mern-front-end.netlify.app)
+
 ## Credit
 
 APOD
