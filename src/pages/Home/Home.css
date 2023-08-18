@@ -17,14 +17,6 @@
     align-items: center;
 }
 
-.rocket-container {
-    position: fixed;
-    bottom: 0;
-    width: 10%;
-    height: 400px;
-    animation: fly 5s linear infinite;
-}
-
 .content-container {
     display: flex;
     flex-direction: column;
@@ -34,7 +26,6 @@
     font-family: "Trench";
     font-size: 1.5rem;
 }
-
 
 .main-title {
     font-size: 3.5rem;
@@ -69,7 +60,11 @@
 }
 
 .saturn {
-    width: 12rem;
+    width: 13rem;
+}
+
+.neptune {
+    width: 12rem
 }
 
 .neptune-container {
@@ -82,9 +77,26 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .main-summary {
-        color: white;
-        text-align: center;
-        max-width: 20rem;
+
+    .main-title {
+        font-size: 2rem;
     }
+
+    .main-summary {
+        max-width: 15rem;
+        font-size: 1.3rem;
+    }
+
+    .start-btn {
+        font-size: 3rem;
+    }
+
+    .saturn {
+        width: 6rem;
+    }
+
+    .neptune {
+        width: 5rem
+    }
+
 }

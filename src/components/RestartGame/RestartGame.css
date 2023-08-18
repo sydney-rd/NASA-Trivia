@@ -1,0 +1,27 @@
+.link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    text-decoration: underline;
+}
+
+.home-link {
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.space-gif {
+    width: 30%
+}

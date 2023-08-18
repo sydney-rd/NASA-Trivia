@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ApodInfo from "../../components/ApodInfo/ApodInfo";
 import { getTriviaQues } from "../../services/trivia";
+import RestartGame from "../../components/RestartGame/RestartGame";
 import "./Trivia.css";
 
 export default function Trivia() {
@@ -26,7 +27,7 @@ export default function Trivia() {
     if (selectedAnswer === triviaQues[index]?.answer?.correct) {
       setScore(score + 1);
     }
-    setIndex(index + 1);
+    setIndex((prevIndex) => prevIndex + 1);
   };
 
   // logic for incorrect answer
@@ -45,7 +46,11 @@ export default function Trivia() {
       <ApodInfo apodIndex={index} />
       <div className="trivia-container">
         <h3 className="trivia-question">
-          Question {index + 1}: {triviaQues[index]?.question}
+          {index < triviaQues.length ? (
+            `Question ${index + 1}: ${triviaQues[index]?.question}`
+          ) : (
+            <RestartGame />
+          )}
         </h3>
         <div className="trivia-choices">
           {triviaQues[index]?.answer?.choices.map((choice, i) => (

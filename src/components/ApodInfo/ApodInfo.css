@@ -53,3 +53,33 @@
     background: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
 }
+
+@media only screen and (max-width: 768px) {
+    .APOD-container {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    .APOD-explanation {
+        width: 16rem;
+        font-size: .7rem;
+    }
+
+    .APOD-img {
+        height: 10rem;
+        width: 12rem;
+        margin-top: 1rem;
+    }
+
+    .APOD-date {
+        font-size: .7rem;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .APOD-title {
+        font-size: 1.7rem;
+    }
+
+
+}
