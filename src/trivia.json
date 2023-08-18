@@ -72,30 +72,6 @@
         }
     },
     {
-        "question": "What is the name of the largest volcano in our solar system, located on Mars?",
-        "answer": {
-            "choices": [
-                "Mauna Kea",
-                "Mount St. Helens",
-                "Mount Everest",
-                "Olympus Mons"
-            ],
-            "correct": "Olympus Mons"
-        }
-    },
-    {
-        "question": "Which spacecraft was the first to successfully land humans on the Moon?",
-        "answer": {
-            "choices": [
-                "Apollo 11",
-                "Space Shuttle",
-                "Voyager 1",
-                "Mars Rover"
-            ],
-            "correct": "Apollo 11"
-        }
-    },
-    {
         "question": "What is the name of the largest moon of Saturn?",
         "answer": {
             "choices": [
@@ -118,5 +94,29 @@
             ],
             "correct": "Fusion"
         }
-    }
+    },
+    {
+        "question": "What is the process by which a star releases energy and shines?",
+        "answer": {
+          "choices": [
+            "Fusion",
+            "Conduction",
+            "Evaporation",
+            "Sublimation"
+          ],
+          "correct": "Fusion"
+        }
+      },
+      {
+        "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+        "answer": {
+          "choices": [
+            "Mars",
+            "Mercury",
+            "Venus",
+            "Jupiter"
+          ],
+          "correct": "Venus"
+        }
+      }
 ]

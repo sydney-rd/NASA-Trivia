@@ -42,7 +42,6 @@ body {
     color: white;
     font-family: Trench;
     font-size: 1.8rem;
-    padding-top: 1rem;
 }
 
 .trivia-choices button {
@@ -79,11 +78,11 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-top: 2rem;
     }
 
     .trivia-question {
         font-size: 1.3rem;
+
     }
 
     .trivia-choices button {
