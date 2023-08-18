@@ -90,6 +90,9 @@ body {
         height: 2rem;
         width: 5.5rem;
         font-size: .8rem;
+    }
 
+    .trivia-choices button:hover {
+        color: none;
     }
 }
