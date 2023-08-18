@@ -83,40 +83,28 @@
             "correct": "Titan"
         }
     },
-    {
-        "question": "What is the name of the galaxy that contains our solar system?",
+      {
+        "question": "How many constellations are there?",
         "answer": {
           "choices": [
-            "Andromeda",
-            "Milky Way",
-            "Orion",
-            "Triangulum"
+            "250",
+            "40",
+            "88",
+            "101"
           ],
-          "correct": "Milky Way"
+          "correct": "88"
         }
       },
       {
-        "question": "Which phenomenon causes the appearance of a bright ring around the moon in the night sky?",
+        "question": "What planet has the largest ocean?",
         "answer": {
           "choices": [
-            "Eclipse",
-            "Aurora",
-            "Halley's Comet",
-            "Halo"
+            "Jupiter",
+            "Neptune",
+            "Earth",
+            "Saturn"
           ],
-          "correct": "Halo"
-        }
-      },
-      {
-        "question": "What is the name of the phenomenon in which a star explodes, becoming extremely bright for a period of time?",
-        "answer": {
-          "choices": [
-            "Nebula",
-            "Quasar",
-            "Supernova",
-            "Black Hole"
-          ],
-          "correct": "Supernova"
+          "correct": "Jupiter"
         }
       }
 ]
