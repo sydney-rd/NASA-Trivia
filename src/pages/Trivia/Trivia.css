@@ -16,13 +16,11 @@ body {
     background-size: cover;
 }
 
-
 .incorrect-answer {
     color: white;
     font-family: Trench;
     font-size: 1.2rem;
 }
-
 
 .score {
     color: white;

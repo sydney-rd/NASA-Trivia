@@ -4,7 +4,6 @@ import "./ApodInfo.css";
 
 export default function ApodInfo({ apodIndex }) {
   const [apodData, setApodData] = useState([]);
-  // const [index, setIndex] = useState(0);
 
   useEffect(() => {
     axios

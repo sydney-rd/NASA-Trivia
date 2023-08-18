@@ -59,14 +59,6 @@
     left: 0;
 }
 
-.saturn {
-    width: 13rem;
-}
-
-.neptune {
-    width: 12rem
-}
-
 .neptune-container {
     z-index: 1;
     position: fixed;
@@ -74,6 +66,14 @@
     padding-right: 3rem;
     top: 0;
     right: 0;
+}
+
+.saturn {
+    width: 13rem;
+}
+
+.neptune {
+    width: 12rem
 }
 
 @media only screen and (max-width: 768px) {
