@@ -29,6 +29,17 @@ export default function Trivia() {
     setIndex(index + 1);
   };
 
+  // logic for incorrect answer
+  useEffect(() => {
+    if (clickedChoice !== triviaQues[index - 1]?.answer?.correct) {
+      const timer = setTimeout(() => {
+        setClickedChoice(null); // Reset the clicked choice
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [clickedChoice, index]);
+
   return (
     <div className="page-container">
       <ApodInfo />
@@ -46,7 +57,7 @@ export default function Trivia() {
         {clickedChoice &&
           clickedChoice !== triviaQues[index - 1]?.answer?.correct && (
             <p className="incorrect-answer">
-              Incorrect - The correct answer is
+              Incorrect - The correct answer is{" "}
               {triviaQues[index - 1]?.answer?.correct}
             </p>
           )}
