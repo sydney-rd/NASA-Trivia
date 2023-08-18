@@ -30,8 +30,10 @@ export default function Home() {
         <h1 className="main-title">Astronomy Trivia</h1>
         <div className="main-summary">
           Welcome to Astronomy Trivia. Utilizing beautiful pictures and
-          information from NASA's Astronomy Picture of the Day API, test your
-          knowledge with trivia while learning a thing or two from NASA!
+          information from NASA's Astronomy Picture of the Day API. <br />
+          <br />
+          Test your knowledge with trivia while learning a thing or two from
+          NASA!
         </div>
         <div className="start-btn" onClick={handleStartClick}>
           BEGIN
