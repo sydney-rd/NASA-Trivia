@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url =
-  "https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/trivia.json";
+  "https://raw.githubusercontent.com/sydney-rd/NASA-trivia/main/src/trivia.json";
 
 // get
 export const getTriviaQues = async () => {
