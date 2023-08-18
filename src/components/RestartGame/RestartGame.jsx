@@ -12,8 +12,6 @@ export default function RestartGame() {
       <div className="trivia-link">
         <Link to="/">Play Again</Link>
       </div>
-
-      <p className="final-score">FINAL SCORE</p>
     </div>
   );
 }

@@ -93,6 +93,6 @@ body {
     }
 
     .trivia-choices button:hover {
-        color: none;
+        color: white;
     }
 }

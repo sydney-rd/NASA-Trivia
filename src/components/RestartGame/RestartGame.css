@@ -8,18 +8,9 @@ a {
     color: inherit;
 }
 
-.final-score {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40%;
-    text-decoration: underline;
-}
-
 .home-link {
     font-size: 2rem;
     cursor: pointer;
-
 }
 
 .space-gif {
