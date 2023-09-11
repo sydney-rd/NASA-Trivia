@@ -108,7 +108,7 @@
         }
       },
       {
-        "question": "How long does it take the moon to orbit the Earth?",
+        "question": "How many days does it take the moon to orbit the Earth?",
         "answer": {
           "choices": [
             "30",

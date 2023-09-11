@@ -26,9 +26,9 @@ export default function Home() {
         />
       </div>
       <div className="content-container">
-        <h1 className="main-title">Astronomy Trivia</h1>
+        <h1 className="main-title">Space Trivia</h1>
         <div className="main-summary">
-          Welcome to Astronomy Trivia. Utilizing beautiful pictures and
+          Welcome to Space Trivia. Utilizing beautiful pictures and
           information from NASA's Astronomy Picture of the Day API. <br />
           <br />
           Test your knowledge with trivia while learning a thing or two from
